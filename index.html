@@ -1,9 +1,83 @@
-<html>
-    <head>
-        <title>Git</title>
-    </head>
-    <body>
-        <h1>Hello</h1>
-        <p>I ama trying to make an html file so i can put it in git</p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bio Data</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            max-height: 200px;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .bio-data {
+            margin-bottom: 20px;
+        }
+        .bio-data label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Bio Data</h1>
+        <div class="gallery">
+            <img src="me.jpg">
+        </div>
+        <br>
+        <div class="bio-data">
+            <label for="name">Name:</label>
+            <p id="name">Prabal Aryal</p>
+        </div>
+        <div class="bio-data">
+            <label for="age">Age:</label>
+            <p id="age">23</p>
+        </div>
+        <div class="bio-data">
+            <label for="email">Email:</label>
+            <p id="email">prabal.aryal.ez@gmail.com<br>eziolayra@gmail.com</p>
+        </div>
+        <div class="bio-data">
+            <label>Phone no.:</label>
+            <p>9823681662, 9843810916</p>
+        </div>
+        <div class="bio-data">
+            <label for="location">Location:</label>
+            <p id="location">Kaushaltar, Bhaktapur</p>
+        </div>
+        <div class="bio-data">
+            <label for="interests">Interests:</label>
+            <p id="interests">Hiking, Drawing, Painting, Gardening, Learning</p>
+        </div>
+    </div>
+</body>
 </html>
